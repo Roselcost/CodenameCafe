@@ -1,0 +1,293 @@
+{
+  "data": {
+    "id": "cc",
+    "name": "Codename: Café",
+    "description": {
+      "en": "It's the restaurant that is the result of the collaboration of my group of friends. We are not just a café, but the name is very cool",
+      "es": "Es el restaurante fruto de la colaboración de mi grupo de amigos. No somos solo una cafetería, pero es que el nombre mola mazo",
+      "ca": "És el restaurant fruit de la col·laboració del meu grup d'amics. No som només una cafeteria, però és que el nom mola molt",
+      "fr": "C'est le restaurant qui est le fruit de la collaboration de mon groupe d'amis. Nous ne sommes pas seulement une café, mais le nom est très cool",
+      "ja": "私の友人グループのコラボレーションの結果であるレストランです。 私たちはただの食堂ではありませんが、その名前はとてもクールです"
+    },
+    "icon": "🕵️",
+    "passwords": [{ "pass": "keyblade", "type": "secretItems" }]
+  },
+  "menu": [
+    {
+      "category": {
+        "en": "🍺 Drinks",
+        "es": "🍺 Bebidas",
+        "ca": "🍺 Begudes",
+        "fr": "🍺 Boissons",
+        "ja": "🍺 飲み物"
+      },
+      "items": [
+        {
+          "itemId": 100,
+          "title": {
+            "en": "Water",
+            "es": "Agua",
+            "ca": "Aigua",
+            "fr": "Eau",
+            "ja": "水"
+          },
+          "price": 1.0,
+          "description": {
+            "en": "Tasteless, odorless, colorless. Water, nothing else. H2O. Well, not really, it has minerals. Did you know that 1 liter of water is equivalent to 1 kilo of water?",
+            "es": "Insípida, inodora, incolora. Agua, nada más. H2O. Bueno, en realidad no, tiene minerales. ¿Sabías que 1 litro de agua equivale a 1 kilo de agua?",
+            "ca": "Insípida, inodora, incolora. Aigua, res més. H2O. Bé, de fet no, té minerals. Sabíeu que 1 litre d'aigua equival a 1 quilo d'aigua?",
+            "fr": "Insipide, inodore, incolore. De l'eau, rien d'autre. H2O. Eh bien, pas vraiment, il contient des minéraux. Saviez-vous qu'1 litre d'eau équivaut à 1 kilo d'eau?",
+            "ja": "無味無臭無色。 水、他には何もありません。 H2O。 いや、そうじゃなくて、ミネラルが含まれている。 1リットルの水は1キロの水に相当することをご存知ですか？"
+          },
+          "allergens": ["vegetarian", "vegan"],
+          "pictures": ["water.jpeg"]
+        },
+        {
+          "itemId": 101,
+          "title": {
+            "en": "Radler",
+            "es": "Clara",
+            "ca": "Clara",
+            "fr": "Radler",
+            "ja": "ラドラー"
+          },
+          "price": 1.85,
+          "description": {
+            "en": "Do you want to drink beer but fancy something softer and citrusier? This is your drink.",
+            "es": "¿Quieres beber cerveza pero te apetece algo más suave y cítrico? Esta es tu bebida.",
+            "ca": "Vols beure cervesa però et ve de gust una mica més suau i cítric? Aquesta és la teva beguda.",
+            "fr": "Vous voulez boire de la bière mais vous avez envie de quelque chose de plus doux et d'agrume? C'est ta boisson.",
+            "ja": "ビールを飲みたいけど、もっと柔らかく柑橘系のビールが飲みたいですか？これはあなたの飲み物です。"
+          },
+          "allergens": ["gluten", "fructose", "vegetarian", "vegan"],
+          "pictures": ["radler.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🍔 Burgers",
+        "es": "🍔 Hamburguesas",
+        "ca": "🍔 Hamburgueses",
+        "fr": "🍔 Hamburgers",
+        "ja": "🍔 ハンバーガー"
+      },
+      "items": [
+        {
+          "itemId": 200,
+          "title": {
+            "en": "Fish burger",
+            "es": "Hamburguesa de pescado",
+            "ca": "Hamburguesa de peix",
+            "fr": "Hamburger de poisson",
+            "ja": "フィッシュバーガー"
+          },
+          "price": 6.5,
+          "description": {
+            "en": "More than a hamburger, quite an experience. Do not underestimate it for being fish. Toasted bread, battered hake, lettuce and mayonnaise come together to offer you a unique sensation.",
+            "es": "Más que una hamburguesa, toda una experiencia. No la subestimes por ser de pescado. Pan tostado, merluza rebozada, lechuga y mayonesa se unen para ofrecerte una sensación única.",
+            "ca": "Més que una hamburguesa, tota una experiència. No la subestimis per ser de peix. Pa torrat, lluç arrebossat, enciam i maionesa s'uneixen per oferir-te una sensació única.",
+            "fr": "Plus qu'un hamburger, toute une expérience. Ne le sous-estimez pas pour être un poisson. Pain grillé, merlu pané, laitue et mayonnaise s'unissent pour vous offrir une sensation unique.",
+            "ja": "ハンバーガー以上の、かなりの経験。 魚だからといって過小評価しないでください。 トーストしたパンとメルルーサの衣、レタスとマヨネーズが合わさって独特の食感を楽しめます。"
+          },
+          "allergens": ["egg", "gluten"],
+          "pictures": ["fishburger.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🍝 Basics",
+        "es": "🍝 Básicos",
+        "ca": "🍝 Bàsics",
+        "fr": "🍝 Basique",
+        "ja": "🍝 基本"
+      },
+      "items": [
+        {
+          "itemId": 300,
+          "title": {
+            "en": "Fish and lettuce",
+            "es": "Pescado y lechuga",
+            "ca": "Peix i enciam",
+            "fr": "Poisson et laitue",
+            "ja": "魚とレタス"
+          },
+          "price": 5.5,
+          "description": {
+            "en": "As boring as it sounds. A cheap and easy dish to make. It's a little embarrassing that it's on the menu, if you ask me.",
+            "es": "Tan aburrido como suena. Un plato barato y fácil de hacer. Es un poquito avergonzante que esté en el menú, si me lo preguntas.",
+            "ca": "Tan avorrit com sona. Un plat barat i fàcil de fer. És una mica avergonyint que estigui al menú, si m'ho preguntes.",
+            "fr": "Aussi ennuyeux que cela puisse paraître. Un plat pas cher et facile à faire. C'est un peu gênant que ce soit au menu, si vous voulez mon avis.",
+            "ja": "それが聞こえるほど退屈です。 安くて簡単に作れる一品。 メニューにあると聞いたらちょっと恥ずかしい。"
+          },
+          "allergens": ["gluten"],
+          "pictures": ["fishlettuce.jpeg"]
+        },
+        {
+          "itemId": 301,
+          "title": {
+            "en": "Katsu curry",
+            "es": "Katsu curry",
+            "ca": "Katsu curry",
+            "fr": "Katsu curry",
+            "ja": "カツカレー"
+          },
+          "price": 8.75,
+          "description": {
+            "en": "This Japanese dish has it all: rice, crispy battered meat tonkatsu, and mildly spicy curry. If you try it, you will fall in love.",
+            "es": "Este plato japonés lo tiene todo: arroz, carne rebozada crujiente tonkatsu y curry ligeramente picante. Si lo pruebas, te enamorarás.",
+            "ca": "Aquest plat japonès ho té tot: arròs, carn arrebossada cruixent tonkatsu i curri lleugerament picant. Si ho proves, t'enamoraràs.",
+            "fr": "Ce plat japonais a tout pour plaire : riz, tonkatsu de viande panée croustillante et curry légèrement épicé. Si vous l'essayez, vous tomberez amoureux.",
+            "ja": "ご飯、衣のパリパリとんかつ、ピリ辛のカレー、すべてが揃った和食です。 試してみると、恋に落ちます。"
+          },
+          "allergens": ["gluten", "lactose"],
+          "pictures": ["katsucurry.jpeg"]
+        },
+        {
+          "itemId": 302,
+          "title": {
+            "en": "Macaroni gratin",
+            "es": "Macarrones gratinados",
+            "ca": "Macarrons gratinats",
+            "fr": "Gratin de macaronis",
+            "ja": "マカロニグラタン"
+          },
+          "price": 7.6,
+          "description": {
+            "en": "A classic. Al dente macaroni with a tomato, onion, foie and ham sauce that will make you melt. And on top, gratin with a sensational mix of cheeses.",
+            "es": "Todo un clásico. Macarrones al dente con una salsa de tomate, cebolla, foie y jamón que hará que te derritas. Y encima, gratinado con una mezcla de quesos sensacional.",
+            "ca": "Tot un clàssic. Macarrons al dente amb una salsa de tomàquet, ceba, foie i pernil que farà que et fonguis. I a sobre, gratinat amb una barreja de formatges sensacional.",
+            "fr": "Un classique. Macaroni al dente avec une sauce tomate, oignon, foie et jambon qui vous fera fondre. Et pour couronner le tout, un gratin avec un mélange sensationnel de fromages.",
+            "ja": "クラシック。 アルデンテのマカロニにトマト、オニオン、フォアワ、ハムのソースがとろけるように。 そしてその上には、センセーショナルなミックスチーズのグラタン。"
+          },
+          "allergens": ["lactose", "gluten", "fructose"],
+          "pictures": ["macaronigratin.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🍱 World cuisine",
+        "es": "🍱 Cocina del mundo",
+        "ca": "🍱 Cuina del món",
+        "fr": "🍱 Cuisine du monde",
+        "ja": "🍱 世界の料理"
+      },
+      "items": [
+        {
+          "itemId": 400,
+          "title": {
+            "en": "Sushi",
+            "es": "Sushi",
+            "ca": "Sushi",
+            "fr": "Sushi",
+            "ja": "寿司"
+          },
+          "price": 16.5,
+          "description": {
+            "en": "The quintessential Japanese dish. Delicious assortment of tuna and salmon nigiris, for you. Did you know that sushi itself is only a few hundred years old and that its origins go back to being a method of preserving fish in rice and salt?",
+            "es": "El plato japonés por excelencia. Delicioso surtido de nigiris de atún y salmón, para ti. ¿Sabías que el sushi en si sólo tiene unos pocos cientos de años y que sus origenes se remontan a ser un método de conservación de pescado en arroz y sal?",
+            "ca": "El plat japonès per excel·lència. Deliciós assortiment de nigiris de tonyina i salmó, per a tu. Sabies que el sushi només té uns quants centenars d'anys i que els seus orígens es remunten a ser un mètode de conservació de peix en arròs i sal?",
+            "fr": "Le plat japonais par excellence. Délicieux assortiment de nigiris thon et saumon, pour vous. Saviez-vous que le sushi lui-même n'a que quelques centaines d'années et que ses origines remontent à une méthode de conservation du poisson dans du riz et du sel?",
+            "ja": "日本料理の代表格。 まぐろと鮭のにぎりの美味しい盛り合わせをあなたに。 寿司自体の歴史はわずか数百年で、その起源は魚を米と塩で保存する方法にまでさかのぼることをご存知ですか?"
+          },
+          "allergens": [],
+          "pictures": ["sushi.jpeg"]
+        },
+        {
+          "itemId": 401,
+          "title": {
+            "en": "Spanish omelette",
+            "es": "Tortilla de patatas",
+            "ca": "Truita de patates",
+            "fr": "Tortilla de patatas",
+            "ja": "トルティージャ"
+          },
+          "price": 10.3,
+          "description": {
+            "en": "If you are Spanish, you know how to make a potato omelette. With potatoes, without onion and undercooked. You can ask for it to be more cooked and to be served with onion. You are entitled to your wrong opinion.",
+            "es": "Si eres español, sabes hacer una tortilla de patatas. Con patatas, sin cebolla y poco hecha. Puedes pedir que esté más hecha y que te la sirvan con cebolla. Tienes derecho a estar equivocado.",
+            "ca": "Si ets espanyol, saps fer una truita de patates. Amb patates, sense ceba i poc feta. Pots demanar que estigui més feta i que te'l serveixin amb ceba. Tens dret a estar equivocat.",
+            "fr": "Si vous êtes espagnol, vous savez comment faire une omelette aux pommes de terre. Avec des pommes de terre, sans oignon et peu cuit. Vous pouvez demander qu'il soit plus cuit et qu'il soit servi avec de l'oignon. Vous avez le droit de vous tromper.",
+            "ja": "あなたがスペイン人なら、ポテトオムレツの作り方を知っています. じゃがいもあり、タマネギなし、加熱不十分。 もっと調理して玉ねぎを添えてもらうように頼むことができます。 あなたには間違っている権利があります。"
+          },
+          "allergens": ["egg", "vegetarian"],
+          "pictures": ["spanishomelette.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🍰 Desserts",
+        "es": "🍰 Postres",
+        "ca": "🍰 Postres",
+        "fr": "🍰 Desserts",
+        "ja": "🍰 デザート"
+      },
+      "items": [
+        {
+          "itemId": 500,
+          "title": {
+            "en": "Chocolate milkshake",
+            "es": "Batido de chocolate",
+            "ca": "Batut de xocolata",
+            "fr": "Milkshake au chocolat",
+            "ja": "チョコレートミルクシェイク"
+          },
+          "price": 3.4,
+          "description": {
+            "en": "Once a year does not hurt. After a hearty meal, what better than a satisfying dessert? Mixture of almond ice cream, milk, vanilla, cocoa powder, cream and chocolate shavings. Irresistible.",
+            "es": "Una vez al año no hace daño. Después de una comida copiosa, ¿qué mejor que un postre saciante? Mezcla de helado almendrado, leche, vainilla, cacao en polvo, nata y virutas de chocolate. Irresistible.",
+            "ca": "Un cop l'any no fa mal. Després d'un àpat copiós, què millor que unes postres saciants? Barreja de gelat ametllat, llet, vainilla, cacau en pols, nata i encenalls de xocolata. Irresistible.",
+            "fr": "Une fois par an ne fait pas de mal. Après un repas copieux, quoi de mieux qu'un bon dessert ? Mélange de glace aux amandes, lait, vanille, poudre de cacao, crème et copeaux de chocolat. Irrésistible.",
+            "ja": "1年に1回は痛くありません。 ボリュームたっぷりの食事の後は、満足のいくデザートをどうぞ。 アーモンド アイス クリーム、ミルク、バニラ、ココア パウダー、クリーム、削りチョコレートのミックス。 たまりません。"
+          },
+          "allergens": ["lactose", "gluten", "vegetarian"],
+          "pictures": ["chocolatemilkshake.jpeg"],
+          "secret": true
+        },
+        {
+          "itemId": 501,
+          "title": {
+            "en": "Latte",
+            "es": "Café con leche",
+            "ca": "Cafè amb llet",
+            "fr": "Café au lait",
+            "ja": "ラテ"
+          },
+          "price": 1.4,
+          "description": {
+            "en": "The perfect finishing touch to a good meal. Made with coffee beans from Colombia. Although, today, it is mainly cultivated in South America, it has its origin in Ethiopia.",
+            "es": "El broche de oro perfecto para una buena comida. Elaborado con granos de café procedentes de Colombia. Pese a que, hoy en día, principalmente se cultiva en Sudamérica, tiene su origen en Etiopía.",
+            "ca": "El fermall d'or perfecte per a un bon menjar. Elaborat amb grans de cafè procedents de Colòmbia. Tot i que, avui dia, principalment es cultiva a Sud-amèrica, té el seu origen a Etiòpia.",
+            "fr": "La touche finale parfaite à un bon repas. Fabriqué avec des grains de café de Colombie. Bien qu'aujourd'hui, il soit principalement cultivé en Amérique du Sud, il trouve son origine en Éthiopie.",
+            "ja": "おいしい食事の完璧な仕上げです。 コロンビア産のコーヒー豆を使用。 今日では主に南米で栽培されていますが、原産地はエチオピアです。"
+          },
+          "allergens": ["lactose", "vegetarian"],
+          "pictures": ["latte.jpeg"]
+        },
+        {
+          "itemId": 502,
+          "title": {
+            "en": "Black Tea",
+            "es": "Té negro",
+            "ca": "Te negre",
+            "fr": "Thé noir",
+            "ja": "紅茶"
+          },
+          "price": 1.0,
+          "description": {
+            "en": "The most popular drink in the world, if we don't count water. They say that once someone drank two liters of this tea and noticed how it began to levitate. It was probably something else.",
+            "es": "La bebida más popular del mundo, si no contamos el agua. Dicen que una vez alguien tomó dos litros de este té y notó cómo empezaba a levitar. Probablemente se tratara de otra cosa.",
+            "ca": "La beguda més popular del món, si no comptem l'aigua. Diuen que una vegada algú va agafar dos litres d'aquest te i va notar com començava a levitar. Probablement fos una altra cosa.",
+            "fr": "La boisson la plus populaire au monde, si l'on ne compte pas l'eau. Ils disent qu'une fois quelqu'un a bu deux litres de ce thé et a remarqué comment il a commencé à léviter. C'était probablement autre chose.",
+            "ja": "水を除けば、世界で最も人気のある飲み物です。 彼らは、誰かがこのお茶を2リットル飲んで、それがどのように浮揚し始めたかに気づいたと言います. それはおそらく別のものでした。"
+          },
+          "allergens": ["vegetarian", "vegan"],
+          "pictures": ["tea.jpeg"]
+        }
+      ]
+    }
+  ]
+}
