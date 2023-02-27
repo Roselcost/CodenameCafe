@@ -1,0 +1,55 @@
+<h2>{{ (strings | async).yourOrder }}</h2>
+<span class="flexCenter noOrder" *ngIf="!(orderItems$ | async)?.length">
+  {{ (strings | async).noOrderYet }}
+</span>
+<div *ngIf="(orderItems$ | async)?.length" class="orderContainer">
+  <div *ngIf="!edit" class="pictures">
+    <app-picture
+      *ngFor="let item of orderItems$ | async"
+      [width]="'75px'"
+      [height]="'50px'"
+      [src]="'assets/food/' + item.pictures[0]"
+    ></app-picture>
+  </div>
+  <div class="menu">
+    <div *ngFor="let orderItem of orderItems$ | async" class="itemContainer">
+      <div class="item">
+        <span>{{ orderItem.title }}</span>
+        <span>{{ orderItem.price | tocommadecimal }} €</span>
+      </div>
+      <div *ngIf="edit" class="removeContainer">
+        <app-button
+          (click)="removeItem(orderItem.orderId)"
+          [width]="'20px'"
+          [height]="'20px'"
+          [padding]="'15px'"
+          [fontSize]="'15px'"
+          [label]="'🗑️'"
+        ></app-button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="totalContainer" *ngIf="!!(orderItems$ | async)?.length">
+  <div class="separator"></div>
+  <div class="total">
+    <span>{{ (strings | async).total }}</span>
+    <span>{{ total$ | async | tocommadecimal }} €</span>
+  </div>
+  <div class="buttons">
+    <app-button
+      (click)="edit = !edit"
+      [label]="edit ? (strings | async).view + '' : (strings | async).edit + ''"
+      [width]="'140px'"
+      [height]="'40px'"
+      [padding]="'15px'"
+    ></app-button>
+    <app-button
+      (click)="confirm()"
+      [label]="(strings | async).order + ' 🍽️'"
+      [width]="'140px'"
+      [height]="'40px'"
+      [padding]="'15px'"
+    ></app-button>
+  </div>
+</div>

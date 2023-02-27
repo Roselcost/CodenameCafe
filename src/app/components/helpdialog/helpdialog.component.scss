@@ -1,0 +1,26 @@
+:host {
+  height: 100%;
+  overflow: scroll;
+  display: block;
+  padding: 0 10px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+}
+
+.allergenList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.allergen {
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.allergenIcon {
+  margin-right: 5px;
+}

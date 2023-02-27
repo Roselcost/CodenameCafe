@@ -1,0 +1,21 @@
+<ng-container *ngIf="(restaurantData$ | async)?.id">
+  <h2>{{ (restaurantData$ | async)?.name }}</h2>
+  <div class="descriptionContainer">
+    <div class="logo">
+      {{ (restaurantData$ | async)?.icon }}
+    </div>
+    <p class="description">{{ (restaurantData$ | async)?.description }}</p>
+  </div>
+</ng-container>
+
+<h3>{{ (strings | async).chooseARestaurant }}</h3>
+<div class="restaurants">
+  <app-button
+    *ngFor="let restaurant of restaurantList"
+    [selected]="(restaurantData$ | async)?.id === restaurant.id"
+    [width]="'180px'"
+    [padding]="'10px'"
+    (click)="selectRestaurant(restaurant.id)"
+    [label]="restaurant.icon + ' ' + restaurant.name"
+  ></app-button>
+</div>

@@ -1,0 +1,59 @@
+<h2>{{ (selectedItem$ | async)?.title }}</h2>
+<div class="flexCenter">
+  <app-picture
+    [width]="'350px'"
+    [height]="'200px'"
+    [src]="'assets/food/' + ((selectedItem$ | async)?.pictures)?.[0]"
+  ></app-picture>
+</div>
+<div class="buttonsContainer">
+  <div class="quantityContainer">
+    <app-button
+      (click)="add(-1)"
+      [width]="'50px'"
+      [padding]="'15px'"
+      [label]="'-'"
+    ></app-button>
+    <span class="quantity">{{ number }}</span>
+    <app-button
+      (click)="add(1)"
+      [width]="'50px'"
+      [padding]="'15px'"
+      [label]="'+'"
+    ></app-button>
+  </div>
+  <app-button
+    (click)="hideItem()"
+    [padding]="'15px'"
+    [label]="(strings | async).hide"
+  ></app-button>
+</div>
+
+<div class="addItemSection">
+  <div class="priceContainer">
+    <span class="price">
+      {{
+        ((selectedItem$ | async)?.price ?? 0) * number | tocommadecimal
+      }}</span
+    ><span class="currency">€</span>
+  </div>
+  <app-button
+    (click)="addItem()"
+    [padding]="'15px'"
+    [width]="'150px'"
+    [type]="'primary'"
+    [label]="(strings | async).add"
+  ></app-button>
+</div>
+
+<p
+  *ngFor="let paragraph of (selectedItem$ | async)?.description?.split('\n')"
+  class="description"
+>
+  {{ paragraph }}
+</p>
+<div class="allergenContainer">
+  <div *ngFor="let allergen of allergens">
+    <app-allergen [allergen]="allergen"> </app-allergen>
+  </div>
+</div>

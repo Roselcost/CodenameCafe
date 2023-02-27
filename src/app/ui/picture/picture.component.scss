@@ -1,0 +1,7 @@
+.picture {
+  border: 1px solid var(--secondaryGrey);
+  border-radius: var(--primaryRadius);
+  box-sizing: border-box;
+  object-fit: cover;
+  max-width: 100%;
+}

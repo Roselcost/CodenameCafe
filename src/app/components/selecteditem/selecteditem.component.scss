@@ -1,0 +1,63 @@
+:host {
+  height: 100%;
+  overflow: scroll;
+  display: block;
+  padding: 0 10px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 10px 0;
+  justify-content: center;
+}
+
+.quantityContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.quantity {
+  width: 50px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addItemSection {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.priceContainer {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+}
+
+.price {
+  justify-content: flex-end;
+}
+
+.currency {
+  margin: 0 10px;
+}
+
+.description {
+  text-align: center;
+}
+
+.allergenContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

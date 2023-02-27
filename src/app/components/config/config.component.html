@@ -1,0 +1,90 @@
+<h2>{{ (strings | async).configuration }}</h2>
+<div class="separator"></div>
+<h3>{{ (strings | async).language }}</h3>
+<div class="languages">
+  <app-button
+    *ngFor="let language of languages"
+    (click)="setLanguage(language.id)"
+    [label]="language.label"
+    [selected]="language.id === (language$ | async)"
+    [width]="'155px'"
+    [height]="'40px'"
+    class="language"
+  ></app-button>
+</div>
+<div class="separator"></div>
+<h3>{{ (strings | async).options }}</h3>
+<div class="options">
+  <app-checkbox
+    (clicked)="showAllergens($event)"
+    [checked]="!!(showAllergens$ | async)"
+    [label]="(strings | async).showAllergens"
+  ></app-checkbox>
+  <app-checkbox
+    (clicked)="toggleTheme($event)"
+    [checked]="(darkTheme$ | async) === 'dark-theme'"
+    [label]="(strings | async).darkTheme"
+  ></app-checkbox>
+  <app-button
+    [label]="(strings | async).restoreHiddenItems"
+    [height]="'40px'"
+    [width]="'160px'"
+    (click)="restoreHiddenItems()"
+  ></app-button>
+  <app-button
+    [label]="(strings | async).startOver"
+    [height]="'40px'"
+    [width]="'160px'"
+    (click)="startOver()"
+  ></app-button>
+</div>
+<div class="separator"></div>
+<h3>{{ (strings | async).allergens }}</h3>
+<p>{{ (strings | async).allergenDesc }}</p>
+<div class="allergenList">
+  <div class="flexCenter allergen" *ngFor="let allergen of allergens">
+    <app-allergen class="allergenIcon" [allergen]="allergen"></app-allergen>
+    <app-checkbox
+      [label]="allergen.label"
+      (clicked)="selectAllergen(allergen.name)"
+      [checked]="!(allergens$ | async)?.includes(allergen.name)"
+    ></app-checkbox>
+  </div>
+</div>
+<div class="separator"></div>
+<h3>{{ (strings | async).preferences }}</h3>
+<p>{{ (strings | async).preferencesDesc }}</p>
+<div class="allergenList">
+  <div class="flexCenter allergen" *ngFor="let allergen of restrictions">
+    <app-allergen class="allergenIcon" [allergen]="allergen"></app-allergen>
+    <app-checkbox
+      [label]="allergen.label"
+      (clicked)="selectAllergen(allergen.name)"
+      [checked]="!!(allergens$ | async)?.includes(allergen.name)"
+    ></app-checkbox>
+  </div>
+</div>
+<div class="separator"></div>
+<h3>{{ (strings | async).password }}</h3>
+<div class="passwordContainer">
+  <div class="activatedPasswords">
+    <span>{{ (strings | async).activatedPasswords }}: </span
+    ><span class="password" *ngFor="let pass of validatedPasswords$ | async">{{
+      pass
+    }}</span>
+  </div>
+  <div class="passwordInput">
+    <input
+      (keydown.enter)="validatePassword()"
+      type="text"
+      placeholder="{{ (strings | async).password }}"
+      [(ngModel)]="password"
+    />
+    <app-button
+      [label]="(strings | async).validate"
+      [height]="'40px'"
+      [width]="'100px'"
+      (click)="validatePassword()"
+    ></app-button>
+  </div>
+</div>

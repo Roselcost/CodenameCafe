@@ -1,0 +1,71 @@
+:host {
+  height: 100%;
+  overflow: scroll;
+  display: block;
+  padding: 0 10px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.language {
+  margin: 5px;
+}
+
+.options {
+  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.allergenList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.allergen {
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.allergenIcon {
+  margin-right: 5px;
+}
+
+.activatedPasswords {
+  margin: 10px 0;
+}
+
+.passwordInput {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.password {
+  color: green;
+}
+
+input {
+  background-color: var(--themeColor);
+  border: 1px solid var(--primaryGrey);
+  border-radius: var(--primaryRadius);
+  color: var(--main);
+  padding: 0 10px;
+  width: 50%;
+  font-size: 16px;
+}
+
+input:focus-visible {
+  outline: unset;
+}

@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  padding: 10px;
+  background-color: var(--buttonColor);
+  border: 1px solid var(--primaryGrey);
+  border-radius: var(--primaryRadius);
+}
+
+.description {
+  width: calc(100% - 105px);
+  padding: 0 10px 0 20px;
+}
+
+h3 {
+  margin: 0 0 5px 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allergen {
+  margin-right: 5px;
+}
+
+.price {
+  font-size: 20px;
+}

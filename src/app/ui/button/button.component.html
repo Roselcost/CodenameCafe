@@ -1,0 +1,12 @@
+<button
+  [ngStyle]="{
+    width: width,
+    height: height,
+    padding: padding,
+    'font-size': fontSize
+  }"
+  class="flexCenter"
+  [ngClass]="selected ? 'selected' : type"
+>
+  {{ label }}
+</button>

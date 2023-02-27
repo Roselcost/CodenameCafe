@@ -1,0 +1,8 @@
+<label class="container">
+  <input (click)="doClick()" type="checkbox" [checked]="checked" />
+  <span
+    [ngClass]="indeterminate ? 'indeterminate' : 'tick'"
+    class="checkmark"
+  ></span>
+  <span class="label">{{ label }}</span>
+</label>

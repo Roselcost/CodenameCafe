@@ -1,0 +1,69 @@
+:host {
+  height: 100%;
+  display: block;
+}
+
+h2 {
+  height: 30px;
+  margin: 0 0 20px 0;
+}
+
+.noOrder {
+  height: calc(100% - 50px);
+  text-align: center;
+}
+
+.orderContainer {
+  height: calc(100% - 170px);
+  overflow: scroll;
+  display: block;
+  padding: 0 10px;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.removeContainer {
+  width: 40px;
+  margin: 5px 0 0 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.totalContainer {
+  height: 120px;
+}
+
+.total {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

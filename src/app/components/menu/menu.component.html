@@ -1,0 +1,45 @@
+<app-dialog
+  [@inOutAnimation]
+  *ngIf="(currentOpenDialog$ | async) === 'about'"
+  (closeWindow)="closeWindow()"
+  ><app-about></app-about
+></app-dialog>
+<app-dialog
+  [@inOutAnimation]
+  *ngIf="(currentOpenDialog$ | async) === 'config'"
+  (closeWindow)="closeWindow()"
+  ><app-config></app-config
+></app-dialog>
+<app-dialog
+  [@inOutAnimation]
+  *ngIf="(currentOpenDialog$ | async) === 'help'"
+  (closeWindow)="closeWindow()"
+  ><app-helpdialog></app-helpdialog
+></app-dialog>
+<app-dialog
+  [@inOutAnimation]
+  *ngIf="(currentOpenDialog$ | async) === 'selection'"
+  (closeWindow)="closeWindow()"
+  ><app-order></app-order
+></app-dialog>
+<app-dialog
+  [@inOutAnimation]
+  *ngIf="(currentOpenDialog$ | async) === 'selectedItem'"
+  (closeWindow)="closeWindow()"
+  ><app-selecteditem></app-selecteditem
+></app-dialog>
+<div
+  [ngClass]="!!(currentOpenDialog$ | async) ? 'blur' : 'clear'"
+  class="fullFixed fullFixed__blurOverlay"
+></div>
+
+<app-header></app-header>
+<ng-container *ngFor="let category of menu$ | async">
+  <h2>{{ category.category }}</h2>
+  <app-item
+    class="item"
+    *ngFor="let item of category.items"
+    [item]="item"
+    (click)="selectItem(item.itemId)"
+  ></app-item>
+</ng-container>

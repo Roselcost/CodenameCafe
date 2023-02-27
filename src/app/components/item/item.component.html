@@ -1,0 +1,20 @@
+<app-picture
+  class="picture"
+  [height]="'50px'"
+  [width]="'75px'"
+  [src]="'assets/food/' + item.pictures[0]"
+></app-picture>
+<div class="description">
+  <h3>{{ item.title }}</h3>
+  <div class="info">
+    <div *ngIf="showAllergens$ | async" class="flexCenter">
+      <app-allergen
+        class="allergen"
+        *ngFor="let allergen of allergens"
+        [allergen]="allergen"
+      ></app-allergen>
+    </div>
+    <div *ngIf="!(showAllergens$ | async)"></div>
+    <div class="price">{{ item.price | tocommadecimal }} €</div>
+  </div>
+</div>

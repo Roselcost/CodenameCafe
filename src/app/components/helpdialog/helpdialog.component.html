@@ -1,0 +1,16 @@
+<h2>{{ (strings | async).help }}</h2>
+<app-button
+  class="flexCenter"
+  (click)="closeDialog()"
+  [padding]="'20px'"
+  [label]="(strings | async).helpText + ' 🙋‍♂️'"
+></app-button>
+<h3>{{ (strings | async).allergenList }}</h3>
+<div class="allergenList">
+  <div class="flexCenter allergen" *ngFor="let allergen of allergens">
+    <app-allergen class="allergenIcon" [allergen]="allergen"></app-allergen
+    >{{ allergen.label }}
+  </div>
+</div>
+<div class="separator"></div>
+<span class="flexCenter"> ※ A Daniel Larrosa Mobile App ※</span>

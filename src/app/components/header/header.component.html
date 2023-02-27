@@ -1,0 +1,41 @@
+<div class="title">
+  <app-button
+    (click)="openDialog('about')"
+    [fontSize]="'20px'"
+    [height]="'50px'"
+    [width]="'50px'"
+    [fontSize]="'40px'"
+    [padding]="'30px'"
+    [label]="(restaurantData$ | async)?.icon ?? ''"
+    class="logo"
+  ></app-button>
+  <div>
+    <h1>{{ (restaurantData$ | async)?.name }}</h1>
+    <div>{{ (strings | async).table }} 7</div>
+  </div>
+</div>
+<div class="separator"></div>
+<div class="buttons">
+  <app-button
+    (click)="openDialog('help')"
+    [fontSize]="'20px'"
+    [height]="'40px'"
+    [padding]="'15px'"
+    [label]="'🙋‍♂️'"
+  ></app-button>
+  <app-button
+    (click)="openDialog('config')"
+    [fontSize]="'20px'"
+    [height]="'40px'"
+    [padding]="'15px'"
+    [label]="'⚙️'"
+  ></app-button>
+  <app-button
+    (click)="openDialog('selection')"
+    [type]="'primary'"
+    [fontSize]="'20px'"
+    [height]="'40px'"
+    [padding]="'15px'"
+    [label]="'🍽️'"
+  ></app-button>
+</div>

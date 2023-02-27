@@ -1,0 +1,7 @@
+<div class="fullFixed flexCenter container">
+  <div (click)="closeWindowEvent()" class="fullFixed"></div>
+  <div [@inOutAnimation] class="window">
+    <button (click)="closeWindowEvent()" class="closeButton">x</button>
+    <ng-content></ng-content>
+  </div>
+</div>

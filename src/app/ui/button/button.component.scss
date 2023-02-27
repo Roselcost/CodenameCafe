@@ -1,0 +1,15 @@
+button {
+  color: var(--main);
+  background-color: var(--buttonColor);
+  border: 1px solid var(--primaryGrey);
+  border-radius: var(--primaryRadius);
+  font-family: var(--fonts);
+  font-size: inherit;
+  cursor: pointer;
+}
+.primary {
+  background-color: var(--primaryRed);
+}
+.selected {
+  background-color: var(--primaryRed);
+}

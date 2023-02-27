@@ -1,0 +1,36 @@
+:host {
+  position: sticky;
+  z-index: 0;
+  top: 0;
+  border: 1px solid var(--primaryGrey);
+  border-top: 1px solid var(--themeColor);
+  border-radius: 0 0 var(--primaryRadius) var(--primaryRadius);
+  padding: 10px;
+  background-color: var(--secondTransparentBackground);
+  box-shadow: var(--boxShadow);
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 15px;
+  border-radius: var(--primaryRadius);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}

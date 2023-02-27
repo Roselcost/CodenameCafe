@@ -1,0 +1,293 @@
+{
+  "data": {
+    "id": "ib",
+    "name": "Ignis Bistro",
+    "description": {
+      "en": "Typical gastronomy of the kingdom of Lucis from the kitchen to your palate for your enjoyment",
+      "es": "Gastronomía típica del reino de Lucis de la cocina a su paladar para su disfrute",
+      "ca": "Gastronomia típica del regne de Lucis de la cuina al seu paladar per gaudir-ne",
+      "fr": "Gastronomie typique du royaume de Lucis de la cuisine à votre palais pour votre plus grand plaisir",
+      "ja": "ルシス王国の典型的なガストロノミーをキッチンから味覚までお楽しみください"
+    },
+    "icon": "🍴",
+    "passwords": [{ "pass": "versus", "type": "secretItems" }]
+  },
+  "menu": [
+    {
+      "category": {
+        "en": "🥗 Starters",
+        "es": "🥗 Entrantes",
+        "ca": "🥗 Entrants",
+        "fr": "🥗 Entrées",
+        "ja": "🥗 スターター"
+      },
+      "items": [
+        {
+          "itemId": 100,
+          "title": {
+            "en": "Toasty rice balls",
+            "es": "Bolas de arroz tostadas",
+            "ca": "Boles d'arròs torrades",
+            "fr": "Boulettes de riz grillées",
+            "ja": "ホカホカおにぎり"
+          },
+          "price": 3,
+          "description": {
+            "en": "HP Boost (Level 1): Max HP +50",
+            "es": "Vitalidad (Nivel 1): VIT máxima +50",
+            "ca": "Vitalitat (Nivell 1): VIT màxima +50",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": [],
+          "pictures": ["riceballs.jpeg"]
+        },
+        {
+          "itemId": 101,
+          "title": {
+            "en": "Creamy bisque",
+            "es": "Sopa de mariscos",
+            "ca": "Sopa de marisc",
+            "fr": "Soupe de fruits de mer",
+            "ja": "海鮮スープ"
+          },
+          "price": 4.5,
+          "description": {
+            "en": "Attack Boost (Level 16): Strength +160\nRegen Boost (Level 4): HP Recovery Rate +100%",
+            "es": "Arrojo (Nivel 16): Capacidad ofensiva +160\nVigor (Nivel 4): Velocidad de recuperación de VIT +100%",
+            "ca": "Coratge (Nivell 16): Capacitat ofensiva +160\nVigor (Nivell 4): Velocitat de recuperació de VIT +100%",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["fructose"],
+          "pictures": ["creamybisque.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🥬 Veggie",
+        "es": "🥬 Veggie",
+        "ca": "🥬 Veggie",
+        "fr": "🥬 Veggie",
+        "ja": "🥬 野菜"
+      },
+      "items": [
+        {
+          "itemId": 200,
+          "title": {
+            "en": "Veggie medley stew",
+            "es": "Guiso campero",
+            "ca": "Guisat camperol",
+            "fr": "Ragoût de campagne",
+            "ja": "野菜盛り合わせシチュー"
+          },
+          "price": 4.75,
+          "description": {
+            "en": "Attack Boost (Level 2): Strength +20\nHP Boost (Level 3): Max HP +150",
+            "es": "Arrojo (Nivel 2): Capacidad ofensiva +20\nVitalidad (Nivel 3): VIT máxima +150",
+            "ca": "Coratge (Nivell 2): Capacitat ofensiva +20\nVitalitat (Nivell 3): VIT màxima +150",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["vegetarian", "vegan"],
+          "pictures": ["veggiestew.jpeg"]
+        },
+        {
+          "itemId": 201,
+          "title": {
+            "en": "Packed mushroom stew",
+            "es": "Puchero huertano",
+            "ca": "Olla hortana",
+            "fr": "Pot de verger",
+            "ja": "果樹園の鉢"
+          },
+          "price": 5.2,
+          "description": {
+            "en": "Attack Boost (Level 20): Strength +200\nMagic Boost (Level 20): Magic +200\nLast Stand: Max HP reduced to 10%, Strength and Magic +500",
+            "es": "Arrojo (Nivel 20): Capacidad ofensiva +200\nArcanista (Nivel 20): Magia +200\nBestia Herida: VIT reducida al 10%, Fuerza y Magia +500",
+            "ca": "Coratge (Nivell 20): Capacitat ofensiva +200\nArcanista (Nivell 20): Màgia +200\nBèstia Ferida: VIT reduïda al 10%, Força i Màgia +500",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["vegetarian", "vegan"],
+          "pictures": ["mushroomstew.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🍚 Rice",
+        "es": "🍚 Arroz",
+        "ca": "🍚 Arròs",
+        "fr": "🍚 Riz",
+        "ja": "🍚 米"
+      },
+      "items": [
+        {
+          "itemId": 300,
+          "title": {
+            "en": "Egg-fried crustacean bowl",
+            "es": "Marisco a la Antigua",
+            "ca": "Marisc a l'Antiga",
+            "fr": "Fruits de mer à l'ancienne",
+            "ja": "昔ながらのシーフード"
+          },
+          "price": 8.35,
+          "description": {
+            "en": "Attack Boost (Level 10): Strength +100\nMagic Boost (Level 10): Magic +100\nHP Boost (Level 12): Max HP +600",
+            "es": "Arrojo (Nivel 10): Capacidad ofensiva +100\nArcanista (Nivel 10): Magia +100\nVitalidad (Nivel 12): VIT máxima +600",
+            "ca": "Coratge (Nivell 10): Capacitat ofensiva +100\nArcanista (Nivell 10): Màgia +100\nVitalitat (Nivell 12): VIT màxima +600",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["egg", "crustaceans"],
+          "pictures": ["crustaceanbowl.jpeg"]
+        },
+        {
+          "itemId": 301,
+          "title": {
+            "en": "Royal road paella",
+            "es": "Paella cortesana",
+            "ca": "Paella cortesana",
+            "fr": "Paella courtoise",
+            "ja": "上品なパエリア"
+          },
+          "price": 12.5,
+          "description": {
+            "en": "Attack Boost (Level 15): Strength +150\nHP Boost (Level 20): Max HP +1000\nEndurance: Sprinting does not reduce stamina",
+            "es": "Arrojo (Nivel 15): Capacidad ofensiva +150\nVitalidad (Nivel 20): VIT máxima +1000\nFondo físico: Permite esprintar sin cansarse",
+            "ca": "Coratge (Nivell 15): Capacitat ofensiva +150\nVitalitat (Nivell 20): VIT màxima +1000\nFons físic: Permet esprintar sense cansar-se",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["crustaceans", "molluscs"],
+          "pictures": ["paella.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🥩 Meats",
+        "es": "🥩 Carnes",
+        "ca": "🥩 Carns",
+        "fr": "🥩 Viandes",
+        "ja": "🥩 肉"
+      },
+      "items": [
+        {
+          "itemId": 400,
+          "title": {
+            "en": "Breaded cutlet with tomato",
+            "es": "Escalope a la luciense",
+            "ca": "Escalop a la lucienca",
+            "fr": "Escalope panée à la tomate",
+            "ja": "トマトのパン粉カツ"
+          },
+          "price": 8.1,
+          "description": {
+            "en": "Attack Boost (Level 6): Strength +60\nHP Boost (Level 5): Max HP +250",
+            "es": "Arrojo (Nivel 6): Capacidad ofensiva +60\nVitalidad (Nivel 5): VIT máxima +250",
+            "ca": "Coratge (Nivell 6): Capacitat ofensiva +60\nVitalitat (Nivell 5): VIT màxima +250",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["gluten", "fructose"],
+          "pictures": ["breadedcutlet.jpeg"]
+        },
+        {
+          "itemId": 401,
+          "title": {
+            "en": "King's stew",
+            "es": "Estofado real",
+            "ca": "Estofat reial",
+            "fr": "Ragoût royal",
+            "ja": "ロイヤルシチュー"
+          },
+          "price": 17.75,
+          "description": {
+            "en": "Attack Boost (Level 40): Strength +400\nHP Boost (Level 40): Max HP +2000",
+            "es": "Arrojo (Nivel 40): Capacidad ofensiva +400\nVitalidad (Nivel 40): VIT máxima +2000",
+            "ca": "Coratge (Nivell 40): Capacitat ofensiva +400\nVitalitat (Nivell 40): VIT màxima +2000",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["gluten"],
+          "pictures": ["kingsstew.jpeg"],
+          "secret": true
+        },
+        {
+          "itemId": 402,
+          "title": {
+            "en": "Croaker in brown sauce",
+            "es": "Guiso de batracio en salsa",
+            "ca": "Guisat de batrac amb salsa",
+            "fr": "Ragoût de batracien en sauce",
+            "ja": "ソースのバトラキアン シチュー"
+          },
+          "price": 14.6,
+          "description": {
+            "en": "Attack Boost (Level 15): Strength +150\nHP Boost (Level 12): Max HP +600\nToadproof: Immune to Toad",
+            "es": "Arrojo (Nivel 15): Capacidad ofensiva +150\nVitalidad (Nivel 12): VIT máxima +600\nAntirrana: Protege frente a la transformación en rana",
+            "ca": "Coratge (Nivell 15): Capacitat ofensiva +150\nVitalitat (Nivell 12): VIT màxima +600\nAntirrana: Protegeix de la transformació en granota",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": ["gluten"],
+          "pictures": ["croaker.jpeg"]
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "🐟 Fish",
+        "es": "🐟 Pescados",
+        "ca": "🐟 Peixos",
+        "fr": "🐟 Poisson",
+        "ja": "🐟 魚"
+      },
+      "items": [
+        {
+          "itemId": 500,
+          "title": {
+            "en": "Grilled wild trevally",
+            "es": "Jurel fresco a la plancha",
+            "ca": "Jurel fresc a la planxa",
+            "fr": "Chinchards frais grillés",
+            "ja": "活アジのグリル"
+          },
+          "price": 8.55,
+          "description": {
+            "en": "Attack Boost (Level 7): Strength +70\nHP Boost (Level 2): Max HP +100",
+            "es": "Arrojo (Nivel 7): Capacidad ofensiva +70\nVitalidad (Level 2): VIT máxima +100",
+            "ca": "Coratge (Nivell 7): Capacitat ofensiva +70\nVitalitat (Level 2): VIT màxima +100",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": [],
+          "pictures": ["wildtrevally.jpeg"]
+        },
+        {
+          "itemId": 501,
+          "title": {
+            "en": "Oil-drizzled steamed fish",
+            "es": "Pescado al vapor",
+            "ca": "Peix al vapor",
+            "fr": "Poisson à la vapeur",
+            "ja": "蒸し魚"
+          },
+          "price": 7.5,
+          "description": {
+            "en": "Attack Boost (Level 6): Strength +60\nMagic Boost (Level 5): Magic +50\nHP Boost (Level 4): Max HP +200",
+            "es": "Arrojo (Nivel 6): Capacidad ofensiva +60\nArcanista (Nivel 5): Magia +50\nVitalidad (Nivel 4): VIT máxima +200",
+            "ca": "Coratge (Nivell 6): Capacitat ofensiva +60\nArcanista (Nivell 5): Màgia +50\nVitalitat (Nivell 4): VIT màxima +200",
+            "fr": "",
+            "ja": ""
+          },
+          "allergens": [],
+          "pictures": ["steamedfish.jpeg"]
+        }
+      ]
+    }
+  ]
+}
