@@ -19,3 +19,15 @@
 .item {
   margin-bottom: 10px;
 }
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -34,12 +34,14 @@
 ></div>
 
 <app-header></app-header>
-<ng-container *ngFor="let category of menu$ | async">
-  <h2>{{ category.category }}</h2>
-  <app-item
-    class="item"
-    *ngFor="let item of category.items"
-    [item]="item"
-    (click)="selectItem(item.itemId)"
-  ></app-item>
-</ng-container>
+<div class="items">
+  <div *ngFor="let category of menu$ | async">
+    <h2>{{ category.category }}</h2>
+    <app-item
+      class="item"
+      *ngFor="let item of category.items"
+      [item]="item"
+      (click)="selectItem(item.itemId)"
+    ></app-item>
+  </div>
+</div>

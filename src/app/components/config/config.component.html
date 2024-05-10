@@ -15,28 +15,32 @@
 <div class="separator"></div>
 <h3>{{ (strings | async).options }}</h3>
 <div class="options">
-  <app-checkbox
-    (clicked)="showAllergens($event)"
-    [checked]="!!(showAllergens$ | async)"
-    [label]="(strings | async).showAllergens"
-  ></app-checkbox>
-  <app-checkbox
-    (clicked)="toggleTheme($event)"
-    [checked]="(darkTheme$ | async) === 'dark-theme'"
-    [label]="(strings | async).darkTheme"
-  ></app-checkbox>
-  <app-button
-    [label]="(strings | async).restoreHiddenItems"
-    [height]="'40px'"
-    [width]="'160px'"
-    (click)="restoreHiddenItems()"
-  ></app-button>
-  <app-button
-    [label]="(strings | async).startOver"
-    [height]="'40px'"
-    [width]="'160px'"
-    (click)="startOver()"
-  ></app-button>
+  <div class="option-group">
+    <app-checkbox
+      (clicked)="showAllergens($event)"
+      [checked]="!!(showAllergens$ | async)"
+      [label]="(strings | async).showAllergens"
+    ></app-checkbox>
+    <app-checkbox
+      (clicked)="toggleTheme($event)"
+      [checked]="(darkTheme$ | async) === 'dark-theme'"
+      [label]="(strings | async).darkTheme"
+    ></app-checkbox>
+  </div>
+  <div class="option-group">
+    <app-button
+      [label]="(strings | async).restoreHiddenItems"
+      [height]="'40px'"
+      [width]="'160px'"
+      (click)="restoreHiddenItems()"
+    ></app-button>
+    <app-button
+      [label]="(strings | async).startOver"
+      [height]="'40px'"
+      [width]="'160px'"
+      (click)="startOver()"
+    ></app-button>
+  </div>
 </div>
 <div class="separator"></div>
 <h3>{{ (strings | async).allergens }}</h3>

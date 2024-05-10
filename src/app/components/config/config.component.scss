@@ -20,10 +20,15 @@ h2 {
 }
 
 .options {
-  gap: 10px;
+  gap: 12px;
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.option-group {
+  display: flex;
+  gap: 20px;
 }
 
 .allergenList {
